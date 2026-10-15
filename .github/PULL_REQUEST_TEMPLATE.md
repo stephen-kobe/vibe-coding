@@ -2,10 +2,12 @@
 
 <!-- Décrire le résultat utilisateur et le périmètre. -->
 
-## Cahier des charges
+## Cahier des charges et conception
 
 - [ ] `docs/ai/PROJECT_BRIEF.md` est toujours exact, ou a été mis à jour.
 - [ ] Les critères d’acceptation concernés sont explicitement couverts.
+- [ ] Les impacts architecture, API/données, sécurité, tests et exploitation sont couverts, ou explicitement non applicables.
+- [ ] Un ADR et le plan de livraison/retour arrière sont à jour si le changement est structurant ou risqué.
 
 ## Vérification
 
