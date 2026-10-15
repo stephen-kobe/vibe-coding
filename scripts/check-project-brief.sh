@@ -24,7 +24,8 @@ for heading in \
   '## 6. Exigences non fonctionnelles' \
   '## 7. Critères d’acceptation' \
   '## 8. Validation et commandes' \
-  '## 9. Risques, hypothèses et décisions en attente'
+  '## 9. Risques, hypothèses et décisions en attente' \
+  '## 10. Plan de livraison et retour arrière'
 do
   if ! grep -Fqx "$heading" "$brief"; then
     echo "Section obligatoire absente du cahier des charges : $heading" >&2
