@@ -2,6 +2,8 @@
 
 Ce dépôt fournit une base commune pour utiliser plusieurs assistants IA dans Visual Studio Code avec des règles, un cahier des charges et des contrôles versionnés.
 
+Projet d’AI vibe coding.
+
 ## Démarrage
 
 ```sh
