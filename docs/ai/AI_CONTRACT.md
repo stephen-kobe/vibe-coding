@@ -8,7 +8,7 @@ En cas de conflit, appliquer la première règle applicable dans cet ordre :
 2. Les règles non négociables de ce dépôt, dont la confidentialité, la sécurité et la reproductibilité.
 3. Le cahier des charges du projet : [`PROJECT_BRIEF.md`](PROJECT_BRIEF.md).
 4. Les décisions d’architecture : [`ARCHITECTURE_DECISIONS.md`](ARCHITECTURE_DECISIONS.md).
-5. Les standards applicables : [`DEVELOPMENT_STANDARDS.md`](DEVELOPMENT_STANDARDS.md).
+5. Les standards applicables : [`DEVELOPMENT_STANDARDS.md`](DEVELOPMENT_STANDARDS.md) et le catalogue exhaustif des 91 règles identifiées : [`RULES_CATALOG.md`](RULES_CATALOG.md).
 6. Les règles les plus proches du code modifié, si elles existent et ne contredisent pas les niveaux précédents.
 7. La demande courante, si elle ne contredit pas les niveaux précédents.
 
@@ -16,13 +16,14 @@ Ne jamais deviner une exigence produit, un secret, une dépendance, une autorisa
 
 ## 2. Procédure obligatoire avant toute modification
 
-1. Lire ce contrat, `PROJECT_BRIEF.md`, `ARCHITECTURE_DECISIONS.md` et les sections pertinentes de `DEVELOPMENT_STANDARDS.md`.
+1. Lire ce contrat, `PROJECT_BRIEF.md`, `ARCHITECTURE_DECISIONS.md`, les sections pertinentes de `DEVELOPMENT_STANDARDS.md` et les règles applicables de `RULES_CATALOG.md`.
 2. Examiner le code, les conventions, les dépendances et les contrats déjà présents ; réutiliser ou faire évoluer l’existant avant de créer une abstraction.
 3. Vérifier que le besoin, les critères d’acceptation et les commandes de vérification sont complets et non contradictoires.
 4. Énoncer les hypothèses vérifiables ; interrompre le travail lorsqu’une information indispensable manque.
 5. Évaluer explicitement l’impact architecture, contrat API/données, sécurité, tests et exploitation. Pour un impact significatif, compléter le plan de livraison et un ADR avant le code.
 6. Limiter le changement au besoin demandé. Ne pas mélanger refactoring opportuniste et évolution produit.
 7. Mettre à jour la documentation, les tests et les contrôles affectés dans la même modification.
+8. Identifier les règles ARC, DEV, DATA, SEC, QA, PRJ, OPS et AI pertinentes par leur identifiant ; expliciter les exceptions et preuves de conformité dans la PR. Se reporter au guide [`AGENT_PLAYBOOK.md`](AGENT_PLAYBOOK.md) pour la méthode.
 
 ## 3. Règles non négociables
 
@@ -48,7 +49,7 @@ Avant de considérer une tâche terminée, l’agent doit fournir :
 
 1. Les fichiers modifiés et la raison fonctionnelle.
 2. Les commandes exécutées et leur résultat.
-3. Les limites, hypothèses ou vérifications non réalisées.
+3. Les limites, hypothèses, règles du catalogue concernées ou vérifications non réalisées.
 4. La mise à jour du cahier des charges, du plan de livraison, des standards ou des ADR si elle est requise par le changement.
 
 ## 6. Limite explicite
