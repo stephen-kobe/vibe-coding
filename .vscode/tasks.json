@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Verify AI contract",
+      "type": "shell",
+      "command": "./scripts/verify.sh",
+      "group": { "kind": "test", "isDefault": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Synchronize AI instruction adapters",
+      "type": "shell",
+      "command": "./scripts/sync-ai-instructions.sh",
+      "problemMatcher": []
+    }
+  ]
+}

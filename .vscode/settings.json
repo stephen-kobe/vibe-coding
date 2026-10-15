@@ -1,0 +1,8 @@
+{
+  "editor.formatOnSave": true,
+  "editor.rulers": [100],
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true
+}

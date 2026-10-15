@@ -1,0 +1,20 @@
+# Local editor state
+.vscode/*.log
+.vscode/ipch/
+.vscode/.ropeproject/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Build and test output (configure this list for the selected stack)
+coverage/
+dist/
+build/
+tmp/
+
+# OS files
+.DS_Store
