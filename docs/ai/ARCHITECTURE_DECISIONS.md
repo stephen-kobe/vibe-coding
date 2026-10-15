@@ -27,3 +27,10 @@
 - Contexte : le contrat IA devait porter des règles concrètes d’architecture, qualité, API/données, sécurité, tests et exploitation sans créer une architecture imposée.
 - Décision : `docs/ai/DEVELOPMENT_STANDARDS.md` devient la référence détaillée, liée par le contrat IA. Le cahier des charges comporte un plan de livraison et retour arrière. `make verify` contrôle la présence et les points d’ancrage de cette gouvernance.
 - Conséquences : les assistants disposent d’un référentiel court et versionné ; les changements structurants doivent citer un ADR, et le contrôle automatique détecte une suppression accidentelle des repères de gouvernance sans prétendre analyser sémantiquement le code.
+
+## ADR-005 — Catalogue exhaustif et traçabilité des règles
+
+- Statut : accepté
+- Contexte : les standards synthétiques n'explicitaient pas les 91 règles identifiées, leurs priorités et leur vérification.
+- Décision : `docs/ai/RULES_CATALOG.md` devient le référentiel exhaustif de 91 règles ARC, DEV, DATA, SEC, QA, PRJ, OPS et AI ; le contrat canonique le référence, `docs/ai/AGENT_PLAYBOOK.md` décrit leur application et `make verify` en contrôle l'intégrité structurelle.
+- Conséquences : les changements peuvent citer chaque ID ; l'automatisation n'atteste pas de la qualité sémantique du code produit et la revue humaine conserve sa place.
