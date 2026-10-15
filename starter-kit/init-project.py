@@ -28,6 +28,10 @@ def slugify(value: str) -> str:
     return slug
 
 
+def is_exact_runtime_version(value: str | None) -> bool:
+    return bool(value and re.fullmatch(r"[0-9]+\.[0-9]+\.[0-9]+", value))
+
+
 def replace_tokens(path: Path, values: dict[str, str]) -> None:
     content = path.read_text(encoding="utf-8")
     for token, value in values.items():
@@ -139,10 +143,10 @@ def main() -> int:
     except ValueError as error:
         parser.error(str(error))
 
-    if "php" in stacks and not args.php_version:
-        parser.error("--php-version est requis lorsque php est sélectionné.")
-    if "python" in stacks and not args.python_version:
-        parser.error("--python-version est requis lorsque python est sélectionné.")
+    if "php" in stacks and not is_exact_runtime_version(args.php_version):
+        parser.error("--php-version doit être une version exacte au format X.Y.Z lorsque php est sélectionné.")
+    if "python" in stacks and not is_exact_runtime_version(args.python_version):
+        parser.error("--python-version doit être une version exacte au format X.Y.Z lorsque python est sélectionné.")
     if args.github_repository and not re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", args.github_repository):
         parser.error("--github-repository doit être au format owner/name.")
 

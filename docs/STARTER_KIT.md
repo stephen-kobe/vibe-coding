@@ -18,12 +18,12 @@ python3 init-project.py \
   --destination ../mon-produit \
   --owner "Mon équipe" \
   --stacks php,python \
-  --php-version 8.3.10 \
-  --python-version 3.12.7 \
+  --php-version "<VERSION_PHP_EXACTE>" \
+  --python-version "<VERSION_PYTHON_EXACTE>" \
   --github-repository owner/mon-produit
 ```
 
-L’initialiseur refuse une destination existante, prépare les squelettes sélectionnés et initialise Git sur `main`. Il n’écrase jamais un projet local.
+Remplacer les deux valeurs entre chevrons par les versions décidées par l’équipe, au format `X.Y.Z`. L’initialiseur refuse une destination existante, prépare les squelettes sélectionnés et initialise Git sur `main`. Il n’écrase jamais un projet local.
 
 ## Finalisation obligatoire
 
