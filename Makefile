@@ -9,4 +9,4 @@ sync-ai-instructions:
 	./scripts/sync-ai-instructions.sh
 
 check-governance:
-	./scripts/check-governance-docs.sh
+	sh ./scripts/check-governance-docs.sh
