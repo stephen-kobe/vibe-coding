@@ -13,7 +13,7 @@ make verify
 Pour ouvrir un nouveau projet produit :
 
 1. copier `docs/ai/PROJECT_BRIEF.template.md` vers `docs/ai/PROJECT_BRIEF.md` ;
-2. compléter chaque section avant de générer du code ;
+2. compléter chaque section, y compris le plan de livraison et retour arrière, avant de générer du code ;
 3. choisir et verrouiller la pile technique, les dépendances et les commandes de build ;
 4. exécuter `make verify`, puis publier le dépôt sur GitHub.
 
@@ -21,7 +21,9 @@ Pour ouvrir un nouveau projet produit :
 
 - [Configuration VS Code](docs/VSCODE_SETUP.md)
 - [Contrat IA](docs/ai/AI_CONTRACT.md)
+- [Standards de développement](docs/ai/DEVELOPMENT_STANDARDS.md)
 - [Cahier des charges](docs/ai/PROJECT_BRIEF.md)
+- [Décisions d’architecture](docs/ai/ARCHITECTURE_DECISIONS.md)
 - [Reproductibilité](docs/REPRODUCIBILITY.md)
 - [Politique PHP et Python](docs/STACK_POLICY.md)
 - [Kit d’amorçage équipe](docs/STARTER_KIT.md)
@@ -30,4 +32,4 @@ Pour ouvrir un nouveau projet produit :
 
 ## Garantie réaliste
 
-Le dépôt garantit que les adaptateurs d’instructions sont reconstruits à l’identique depuis le contrat versionné. Il ne prétend pas qu’un modèle IA, par nature non déterministe et doté de son propre mécanisme de découverte des instructions, générera spontanément le même code qu’un autre modèle. La référence est le commit Git revu, testé et verrouillé.
+Le dépôt garantit que les adaptateurs d’instructions sont reconstruits à l’identique depuis le contrat versionné et que les repères de gouvernance requis sont présents. Il ne prétend pas qu’un modèle IA, par nature non déterministe et doté de son propre mécanisme de découverte des instructions, générera spontanément le même code qu’un autre modèle. La référence est le commit Git revu, testé et verrouillé.

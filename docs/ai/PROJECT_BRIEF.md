@@ -7,7 +7,7 @@
 - Nom : Socle de vibe coding VS Code
 - Propriétaire produit : À désigner avant le premier projet produit
 - Dépôt GitHub : https://github.com/stephen-kobe/vibe-coding
-- Version de la spécification : 1.0.0
+- Version de la spécification : 1.1.0
 
 ## 2. Problème et résultat attendu
 
@@ -15,7 +15,7 @@ Fournir un cadre versionné pour que plusieurs assistants IA configurés dans Vi
 
 ## 3. Périmètre
 
-Inclus : contrat IA, modèle de cahier des charges, règles de développement, réglages VS Code, contrôle GitHub, documentation de reproductibilité et politiques PHP/Python.
+Inclus : contrat IA, standards d’architecture et de développement, modèle de cahier des charges, ADR, réglages VS Code, contrôle GitHub, documentation de reproductibilité et politiques PHP/Python.
 
 Exclus : une application métier, le choix des versions de runtime, la création du dépôt GitHub distant et le déploiement en production.
 
@@ -30,6 +30,7 @@ Exclus : une application métier, le choix des versions de runtime, la création
 2. Un cahier des charges au format identique doit être disponible pour chaque nouveau projet.
 3. Une commande locale doit détecter tout écart entre les adaptateurs et le contrat canonique.
 4. Une CI GitHub doit exécuter cette commande à chaque push et pull request.
+5. Les standards d’architecture, qualité, API/données, sécurité, tests et exploitation doivent être versionnés et référencés par le contrat IA.
 
 ## 6. Exigences non fonctionnelles
 
@@ -44,6 +45,7 @@ Exclus : une application métier, le choix des versions de runtime, la création
 2. Modifier un des trois adaptateurs d’instructions fait échouer `make verify`.
 3. `make sync-ai-instructions` restaure les trois adaptateurs exactement.
 4. La CI exécute `make verify` avec des permissions en lecture seule du contenu.
+5. Retirer un repère de structure obligatoire des standards, du contrat ou des ADR fait échouer `make verify`.
 
 ## 8. Validation et commandes
 
@@ -56,3 +58,9 @@ Exclus : une application métier, le choix des versions de runtime, la création
 - Risque : les assistants ne partagent pas un protocole universel de lecture des instructions.
 - Hypothèse : les environnements de développement du projet disposeront des utilitaires POSIX listés ci-dessus.
 - Décision en attente : visibilité du dépôt GitHub, versions exactes de PHP/Python et règles de protection GitHub.
+
+## 10. Plan de livraison et retour arrière
+
+1. Centraliser les règles détaillées dans un standard versionné puis synchroniser les trois adaptateurs IA depuis le contrat.
+2. Vérifier automatiquement les adaptateurs, le cahier des charges et les repères de gouvernance ; la CI exécute les mêmes contrôles.
+3. En cas de régression, annuler le commit de la branche ou restaurer la dernière version revue ; aucun changement de données ou API publique n’est réalisé par ce socle.

@@ -20,3 +20,10 @@
 - Contexte : le dépôt vise principalement des applications et outils PHP et Python, avec des gestionnaires de dépendances différents.
 - Décision : chaque composant choisit une seule pile principale, documente son chemin, son runtime exact et ses commandes dans le cahier des charges. PHP utilise Composer avec `composer.lock` ; Python utilise `pip` avec un fichier de verrouillage incluant les hashes. Les politiques détaillées sont dans `docs/STACK_POLICY.md`.
 - Conséquences : les versions de PHP et Python doivent être décidées avant d’ajouter un dev container ou une CI de build. Aucun `composer update` ni installation Python non verrouillée n’est admis dans une CI reproductible.
+
+## ADR-004 — Standards centralisés et contrôle structurel
+
+- Statut : accepté
+- Contexte : le contrat IA devait porter des règles concrètes d’architecture, qualité, API/données, sécurité, tests et exploitation sans créer une architecture imposée.
+- Décision : `docs/ai/DEVELOPMENT_STANDARDS.md` devient la référence détaillée, liée par le contrat IA. Le cahier des charges comporte un plan de livraison et retour arrière. `make verify` contrôle la présence et les points d’ancrage de cette gouvernance.
+- Conséquences : les assistants disposent d’un référentiel court et versionné ; les changements structurants doivent citer un ADR, et le contrôle automatique détecte une suppression accidentelle des repères de gouvernance sans prétendre analyser sémantiquement le code.
