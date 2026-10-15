@@ -1,6 +1,6 @@
 # Standards de développement
 
-Ces règles complètent le contrat IA. Elles s’appliquent proportionnellement au risque et à la taille du changement : une correction de documentation ne requiert pas une suite d’intégration, mais une modification d’API, de données ou d’autorisation exige les contrôles correspondants.
+Ces règles complètent le contrat IA. Leur version exhaustive, individualisée et traçable (91 règles ARC, DEV, DATA, SEC, QA, PRJ, OPS et AI), avec description, priorité et type de contrôle recommandé, figure dans le [catalogue de règles](RULES_CATALOG.md). Les identifiants sont normatifs : les sections ci-dessous constituent un résumé. Elles s’appliquent proportionnellement au risque et à la taille du changement : une correction de documentation ne requiert pas une suite d’intégration, mais une modification d’API, de données ou d’autorisation exige les contrôles correspondants.
 
 ## 1. Architecture
 
