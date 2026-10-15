@@ -31,6 +31,7 @@ Exclus : une application métier, le choix des versions de runtime, la création
 3. Une commande locale doit détecter tout écart entre les adaptateurs et le contrat canonique.
 4. Une CI GitHub doit exécuter cette commande à chaque push et pull request.
 5. Les standards d’architecture, qualité, API/données, sécurité, tests et exploitation doivent être versionnés et référencés par le contrat IA.
+6. Le catalogue des 91 règles ARC, DEV, DATA, SEC, QA, PRJ, OPS et AI doit conserver chaque identifiant, description, priorité et mode de vérification recommandé.
 
 ## 6. Exigences non fonctionnelles
 
@@ -46,6 +47,7 @@ Exclus : une application métier, le choix des versions de runtime, la création
 3. `make sync-ai-instructions` restaure les trois adaptateurs exactement.
 4. La CI exécute `make verify` avec des permissions en lecture seule du contenu.
 5. Retirer un repère de structure obligatoire des standards, du contrat ou des ADR fait échouer `make verify`.
+6. Supprimer ou dupliquer une des 91 règles numérotées ou sa section fait échouer `make verify`.
 
 ## 8. Validation et commandes
 
