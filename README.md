@@ -22,6 +22,8 @@ Pour ouvrir un nouveau projet produit :
 - [Configuration VS Code](docs/VSCODE_SETUP.md)
 - [Contrat IA](docs/ai/AI_CONTRACT.md)
 - [Standards de développement](docs/ai/DEVELOPMENT_STANDARDS.md)
+- **[Catalogue exhaustif des 91 règles ARC, DEV, DATA, SEC, QA, PRJ, OPS et AI](docs/ai/RULES_CATALOG.md)**
+- [Guide opérationnel des agents et traçabilité](docs/ai/AGENT_PLAYBOOK.md)
 - [Cahier des charges](docs/ai/PROJECT_BRIEF.md)
 - [Décisions d’architecture](docs/ai/ARCHITECTURE_DECISIONS.md)
 - [Reproductibilité](docs/REPRODUCIBILITY.md)
@@ -32,4 +34,4 @@ Pour ouvrir un nouveau projet produit :
 
 ## Garantie réaliste
 
-Le dépôt garantit que les adaptateurs d’instructions sont reconstruits à l’identique depuis le contrat versionné et que les repères de gouvernance requis sont présents. Il ne prétend pas qu’un modèle IA, par nature non déterministe et doté de son propre mécanisme de découverte des instructions, générera spontanément le même code qu’un autre modèle. La référence est le commit Git revu, testé et verrouillé.
+Le dépôt garantit que les adaptateurs d’instructions sont reconstruits à l’identique depuis le contrat versionné et que les repères de gouvernance requis sont présents, y compris les 91 définitions individuelles sans trou ni doublon. Il ne prétend pas qu’un modèle IA, par nature non déterministe et doté de son propre mécanisme de découverte des instructions, générera spontanément le même code qu’un autre modèle. La référence est le commit Git revu, testé et verrouillé.
