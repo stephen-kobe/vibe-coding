@@ -24,6 +24,7 @@ Pour ouvrir un nouveau projet produit :
 - [Cahier des charges](docs/ai/PROJECT_BRIEF.md)
 - [Reproductibilité](docs/REPRODUCIBILITY.md)
 - [Politique PHP et Python](docs/STACK_POLICY.md)
+- [Kit d’amorçage équipe](docs/STARTER_KIT.md)
 - [Livraison GitHub](docs/GITHUB_DELIVERY.md)
 - [Sources](docs/SOURCES.md)
 

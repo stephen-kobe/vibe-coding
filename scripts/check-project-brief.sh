@@ -9,6 +9,11 @@ if [ ! -f "$brief" ]; then
   exit 1
 fi
 
+if grep -Fq '> Statut : BROUILLON' "$brief"; then
+  echo "Le cahier des charges est encore au statut BROUILLON : complétez-le avant de valider le projet." >&2
+  exit 1
+fi
+
 for heading in \
   '# Cahier des charges projet' \
   '## 1. Identité' \
